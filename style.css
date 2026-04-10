@@ -1,0 +1,168 @@
+#splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* This keeps it on top of the login page */
+    transition: opacity 0.5s ease; /* Makes it fade out smoothly */
+}
+
+.splash-content img {
+    width: 80px;
+}
+
+.splash-footer {
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #737373;
+}
+
+.splash-footer img {
+    width: 60px;
+    margin-top: 5px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    /* Magic lines to force absolute centering */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.language-selector {
+    font-size: 14px;
+    color: #737373;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+
+.logo-box img {
+    width: 80px;
+    margin-bottom: 40px;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 12px;
+    border: 1px solid #dbdbdb;
+    border-radius: 12px;
+    background: #fafafa;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #a8a8a8;
+}
+
+/* Buttons */
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    background-color: #0064e0;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.forgot-password {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* Bottom Section */
+.footer-actions {
+    margin-top: auto;
+    padding-top: 100px;
+    width: 100%;
+}
+
+.btn-create {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    color: #0064e0;
+    border: 1px solid #0064e0;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.meta-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: #737373;
+    font-weight: 500;
+}
+
+.meta-logo img {
+    width: 20px;
+}
+#prank-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.95); /* Slight see-through white */
+    z-index: 10000; /* Above everything else */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.prank-content h1 {
+    font-size: 3rem;
+    color: #e1306c; /* Instagram Pink */
+    margin: 20px 0;
+}
+
+.prank-content img {
+    max-width: 250px;
+    border-radius: 20px;
+}
